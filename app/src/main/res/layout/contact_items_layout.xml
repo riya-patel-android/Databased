@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#E6CED6">
+
+        <TextView
+            android:id="@+id/tvinitial"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="#93A1ED"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:maxLength="1"
+            android:text="a"
+            android:textAllCaps="true"
+            android:textSize="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/makeCall"
+            android:layout_toRightOf="@id/tvinitial"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="2dp"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/tvcontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/makeCall"
+            android:layout_width="45dp"
+            android:layout_height="60dp"
+            android:layout_toLeftOf="@id/openMenu"
+            android:padding="10dp"
+            android:tint="@color/black"
+            android:background="#B0EEF6"
+            android:src="@drawable/ic_call" />
+
+        <ImageView
+            android:id="@+id/openMenu"
+            android:layout_width="45dp"
+            android:layout_height="60dp"
+            android:background="#F1EAAD"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:tint="@color/black"
+            android:src="@drawable/ic_menu" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
